@@ -1,0 +1,66 @@
+/**
+ * Styles for junior-instagram-feed
+ * 
+ */
+.jr-instagram-feed-clearfix {
+	overflow: hidden;
+}
+.jr-instagram-feed-clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+#jr-instagram-feed {
+	
+}
+#jr-instagram-feed * {
+	outline: none;
+}
+#jr-instagram-feed ul {
+	margin: 0 -10px;
+	list-style: none;
+}
+#jr-instagram-feed li {
+	float: left;
+	width: 33.333%;
+	margin: 0;
+	list-style: none;
+}
+.jr-instagram-feed-post-padding {
+	padding: 10px;
+}
+.jr-instagram-feed-post-inner {
+	position: relative;
+	width: 100%;
+	padding-top: 100%;
+}
+.jr-shopable-icon {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	width: 20px;
+	height: 20px;
+}
+.jr-shopable-link:hover .jr-shopable-icon {
+	/*fill: white!important;*/
+}
+.jr-shopable-link {
+	display: block;
+    position: relative;
+	/*background: #c6c6c8;*/
+    background: none;
+	opacity: 1!important;
+}
+.jr-shopable-link:hover .jr-instagram-feed-post-inner {
+	opacity: 0.25;
+}
+@media only screen and (max-width: 900px) {
+	#jr-instagram-feed li {
+		width: 50%;
+	}
+}
+@media only screen and (max-width: 700px) {
+	#jr-instagram-feed li {
+		width: 100%;
+	}
+}
